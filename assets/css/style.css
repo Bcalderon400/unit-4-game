@@ -1,0 +1,53 @@
+body {
+    background-image: url("../images/bg-signup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+
+#container {
+    color: white;
+}
+
+.jumbotron {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.win,
+.loss {
+    text-align: center;
+    padding: 40px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.crystals {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.card-body {
+    text-align: center;
+    color: black;
+}
+
+img {
+    padding: 20px;
+}
+
+p {
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.rules {
+    padding-top: 50px;
+}
