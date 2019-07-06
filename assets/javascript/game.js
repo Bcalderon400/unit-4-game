@@ -13,10 +13,10 @@ var resetStart = function() {
     $(".crystals").empty();
 
     var images = [
-        './assets/images/diamond.png',
-        './assets/images/emerald.png',
-        './assets/images/pearl.png',
-        './assets/images/marquis.png'
+        './assets/images/crystal3.png',
+        './assets/images/crystal4.png',
+        './assets/images/crystal1.png',
+        './assets/images/crystal2.png'
     ];
 
     random_result = Math.floor(Math.random() * (max - min) + min);
@@ -35,7 +35,7 @@ var resetStart = function() {
         crystal.css({
             "background-image": "url(" + images[i] + ")",
             "background-size": "cover",
-            
+
         })
 
         $(".crystals").append(crystal);

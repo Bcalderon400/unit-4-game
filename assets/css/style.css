@@ -15,21 +15,39 @@ body {
     background: rgba(0, 0, 0, 0.0);
 }
 
-h1, #numToguess, #counter {
+h1 {
     font-family: 'Merriweather', serif;
     font-size: 60px;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 50px;
 }
 
 .crystals {
     display: flex;
     margin-top: 100px;
     justify-content: center;
+    margin-bottom: 60px;
 }
+
 .crystal {
     height: 150px;
     width: 150px;
-    margin-left: 20px;
-    box-shadow: 2px 2px 4px #000000;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.crystal:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+#numToguess,
+#counter,
+.win,
+.loss {
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 }
