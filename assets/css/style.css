@@ -15,7 +15,7 @@ body {
     background: rgba(0, 0, 0, 0.0);
 }
 
-h1 {
+h1, #numToguess, #counter {
     font-family: 'Merriweather', serif;
     font-size: 60px;
     text-align: center;
@@ -25,38 +25,11 @@ h1 {
 .crystals {
     display: flex;
     margin-top: 100px;
+    justify-content: center;
 }
-
 .crystal {
-    border: 1px solid red;
     height: 150px;
     width: 150px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 4px #000000;
 }
-
-
-/***
-.win,
-.loss {
-    text-align: center;
-    padding: 40px;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-
-.card-body {
-    text-align: center;
-    color: black;
-}
-
-img {
-    padding: 20px;
-}
-
-p {
-    text-shadow: 2px 2px 4px #000000;
-    text-align: center;
-}
-
-.rules {
-    padding-top: 50px;
-}***/

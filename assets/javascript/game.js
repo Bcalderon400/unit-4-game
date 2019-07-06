@@ -34,7 +34,8 @@ var resetStart = function() {
 
         crystal.css({
             "background-image": "url(" + images[i] + ")",
-            "background-size": "cover"
+            "background-size": "cover",
+            
         })
 
         $(".crystals").append(crystal);
@@ -57,7 +58,7 @@ $(document).on('click', ".crystal", function() {
 
     if (counter > random_result) {
 
-        loss--;
+        loss++;
 
         $(".loss").html("Losses: " + loss);
 
