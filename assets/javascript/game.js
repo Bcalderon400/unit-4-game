@@ -12,6 +12,13 @@ var resetStart = function() {
 
     $(".crystals").empty();
 
+    var images = [
+        './assets/images/diamond.png',
+        './assets/images/emerald.png',
+        './assets/images/pearl.png',
+        './assets/images/marquis.png'
+    ];
+
     random_result = Math.floor(Math.random() * (max - min) + min);
 
     $("#numToguess").html('Number to guess: ' + random_result)
@@ -21,13 +28,15 @@ var resetStart = function() {
         var random = Math.floor(Math.random() * 11) + 1;
         //console.log(random);
 
-
-
         var crystal = $("<div>");
         crystal.attr("class", 'crystal')
         crystal.attr("value-random", random)
 
-        crystal.html(random);
+        crystal.css({
+            "background-image": "url(" + images[i] + ")",
+            "background-size": "cover"
+        })
+
         $(".crystals").append(crystal);
 
     }
