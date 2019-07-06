@@ -31,6 +31,9 @@ var resetStart = function() {
         $(".crystals").append(crystal);
 
     }
+    $("#counter").html("Added Score: " + counter);
+    $(".win").html("Wins: " + win);
+    $(".loss").html("Losses: " + loss);
 }
 resetStart();
 
@@ -39,6 +42,8 @@ $(document).on('click', ".crystal", function() {
     var crystalValue = parseInt($(this).attr('value-random'));
 
     counter += crystalValue;
+
+    $("#counter").html("Added Score: " + counter);
     console.log(counter)
 
     if (counter > random_result) {
