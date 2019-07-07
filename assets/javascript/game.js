@@ -32,6 +32,7 @@ var resetStart = function() {
         crystal.attr("class", 'crystal')
         crystal.attr("value-random", random)
 
+
         crystal.css({
             "background-image": "url(" + images[i] + ")",
             "background-size": "cover",
